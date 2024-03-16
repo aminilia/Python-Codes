@@ -3,7 +3,7 @@ Created on Mon Jan 17 2024
 Program to cal residual by a lowpass filter
 @author: Amin.Ilia
 """
-
+### this program use low pass filter to remove tide from observations###
 # %%
 
 import numpy as np 

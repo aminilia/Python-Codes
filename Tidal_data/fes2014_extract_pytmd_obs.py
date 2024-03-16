@@ -1,4 +1,5 @@
-# %%
+### Program to read FES2014 using pytmd  ###
+
 
 # comparison with observation at 
 
@@ -62,29 +63,6 @@ top.index=pd.to_datetime(top['time'])
 fes=pd.DataFrame(lev_obs.data.T)
 fes.index=pd.to_datetime(timedel)
 
-# dfl.drop(columns=[5,6], inplace=True) #remove NAN columns
-
-
-#######################load observations and plot them!!!!#####################################
-
-# %% 
-
-obs=pd.read_csv('C:\work\CSA\FES2014\program\\2023_Obs\92139_Sept-Dec 2023_Tides.csv')
-
-obs.index=pd.to_datetime(obs['Time'])+timedelta(hours=5)
-
-# %% 
-
-fig, ax=plt.subplots()
-ax.plot( fes[0].loc[datetime(2023,11,15):datetime(2023,11,30)] , 'b', label='FES2014')
-ax.plot( top['level'].loc[datetime(2023,11,15):datetime(2023,11,30)] , 'r', label='Topex')
-ax.plot( obs['Level'].loc[datetime(2023,11,15):datetime(2023,11,30)] , 'k', label='Tide Gauge')
-ax.legend()
-fig.autofmt_xdate(rotation=35)
-plt.suptitle('Comparison of Topex, FES2014, and Obsevation')
-plt.savefig('FES2014_TOPEX_obs_Comparison_GMT.png')
-
-# %% 
 
 
 

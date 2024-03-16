@@ -1,6 +1,9 @@
-### Created by Amin Ilia                      ###
-### program to anlysis ADCP data plot results ###
-### Directions are toward north               ###
+### Developed by Amin Ilia                       ###
+### program to anlysis ADCP data plot results  ###
+### Directions are toward north                ###
+### Profile analysis is based on upper and     ###
+### lower bound of normal distribution of data ###
+  
 
 # %% import libraries 
 import os

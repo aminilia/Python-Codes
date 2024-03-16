@@ -1,4 +1,5 @@
-# %% 
+####A short program to make animation for ADCP profiles#####
+############Developed by Amin Ilia##########################
 
 import numpy as np 
 import pandas as pd 
